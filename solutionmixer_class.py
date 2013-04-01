@@ -1,12 +1,17 @@
 #! /usr/bin/python
 # coding: utf8
 # Programm um die Anteile zweier Lösungen zu berechnen zur Erstellung einer Ziellösung mit gewünschter Konzentration
+# Author: suizideFloat
+# Date: Apr 2013
+#########################################################
+
 
 # Import Module
 import time
-#import chems
-#import re
+
 import chemicals
+
+
 
 class GenericChemical(object):
     def __init__(self, mass, structur, dense, physcon):
