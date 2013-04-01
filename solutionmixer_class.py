@@ -8,23 +8,11 @@
 
 # Import Module
 import time
+import math
 
 import chemicals
 
 
-
-class GenericChemical(object):
-    def __init__(self, mass, structur, dense, physcon):
-        self.name = __init__.name
-        self.mass = None
-        self.structur = None
-        self.dense = None
-        self.physcon = None
-
-nacl = GenericChemical(54.88, 'NaCl', 2.17, 'solid')
-
-
-print nacl
 
 # Variablen
 solution1 = raw_input("Wähle Chemiekalie I: ")
@@ -102,6 +90,6 @@ if __name__ == '__main__':
         print ' check your initial solutions\' concentrations\n'
         print 'xxxxxxxxxxxxxxxxxx IMPOSSIBLE xxxxxxxxxxxxxxxxxxx\n'
     else:
-        print 'Du benötigst %.2f Teile / %.2f g von %s' % (anteil1, masse1, solution1)
-        print 'und %.2f Teile / %.2f g von %s' % (anteil2, masse2, solution2)
+        print 'Du benötigst %.2f Teile / %.2f g von %s' % (math.fabs(anteil1), masse1, solution1)
+        print 'und %.2f Teile / %.2f g von %s' % (math.fabs(anteil2), masse2, solution2)
 
