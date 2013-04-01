@@ -21,8 +21,10 @@ class GenericChemical(object):
         self.dense = None
         self.physcon = None
 
+nacl = GenericChemical(54.88, 'NaCl', 2.17, 'solid')
 
 
+print nacl
 
 # Variablen
 solution1 = raw_input("Wähle Chemiekalie I: ")

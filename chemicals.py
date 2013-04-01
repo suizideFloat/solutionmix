@@ -1,4 +1,5 @@
 
+# coding: utf8
 
 class GenericChemical(object):
     def __init__(self, mass, structur, dense, physcon):
@@ -9,6 +10,22 @@ class GenericChemical(object):
         self.physcon = None
 
 class NatriumChlorid(GenericChemical):
-    def GenericChemical.__init__(self, 58.44, 'NaCl', 2.17, 'solid'):
-    pass
+    def __init__(self, mass, structur, dense, physcon):
+        GenericChemical.__init__(self, 58.44, 'NaCl', 2.17, 'solid') # Wichtige Zeile - siehe unten
+    # def GenericChemical.__init__(self, 58.44, 'NaCl', 2.17, 'solid'):
+        self.mass = mass
+        self.structur = structur
+        self.dense = dense
+        self.physcon = physcon
 
+
+class Salzsure(GenericChemical):
+
+    def __init__(self, mass, structur, dense, physcon):
+        GenericChemical.__init__(self)
+    # 36.46, 'HCl', 1.64, 'gaseous'
+
+        self.mass = mass
+        self.structur = structur
+        self.dense = dense
+        self.physcon = physcon
